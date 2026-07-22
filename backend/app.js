@@ -7,7 +7,13 @@ const productRoutes = require('./routes/productRoutes');
 const cartRoutes = require('./routes/cartRoutes');
 const orderRoutes = require('./routes/orderRoutes');
 
-app.use(cors());
+app.use(cors({
+    origin: [
+        "http://localhost:5173",
+        "https://e-commerce-app-eight-sooty.vercel.app/"
+    ],
+    credentials: true
+}));
 app.use(express.json());
 app.use('/api/auth',authRoutes);
 app.use('/api/products',productRoutes);
