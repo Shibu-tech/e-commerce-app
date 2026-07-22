@@ -141,7 +141,7 @@ const AdminOrders = () => {
 
                                     <div key={item._id}>
 
-                                        {item.product.title}
+                                        {item.product?.title || "Product Deleted"}
 
                                         {" × "}
 
