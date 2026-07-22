@@ -10,7 +10,7 @@ const orderRoutes = require('./routes/orderRoutes');
 app.use(cors({
     origin: [
         "http://localhost:5173",
-        "https://e-commerce-app-eight-sooty.vercel.app/"
+        "https://e-commerce-app-eight-sooty.vercel.app"
     ],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true
