@@ -12,6 +12,7 @@ app.use(cors({
         "http://localhost:5173",
         "https://e-commerce-app-eight-sooty.vercel.app/"
     ],
+    methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true
 }));
 app.use(express.json());
